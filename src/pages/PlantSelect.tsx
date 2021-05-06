@@ -14,6 +14,7 @@ import { PlantCardPrimary } from '../components/PlantCardPrimary';
 import { Load } from '../components/Load';
 
 import api from '../services/api';
+import { PlantProps } from '../libs/storage';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
@@ -21,19 +22,6 @@ import fonts from '../styles/fonts';
 interface EnvironmentProps {
   key: string;
   title: string;
-}
-
-interface PlantProps {
-  id: string;
-  name: string;
-  about: string;
-  water_tips: string;
-  photo: string;
-  environments: [string];
-  frequency: {
-    times: number;
-    repeat_every: string;
-  }
 }
 
 export function PlantSelect() {
